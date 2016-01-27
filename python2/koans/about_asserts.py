@@ -52,7 +52,7 @@ class AboutAsserts(Koan):
         """
 
         # This throws an AssertionError exception
-        assert False
+        assert True
 
     def test_that_sometimes_we_need_to_know_the_class_type(self):
         """
@@ -61,17 +61,17 @@ class AboutAsserts(Koan):
 
         # Sometimes we will ask you what the class type of an object is.
         #
-        # For example, contemplate the text string "navel". What is its class type?
+        # For example, contemplate the text string "naval". What is it's class type?
         # The koans runner will include this feedback for this koan:
         #
         #   AssertionError: '-=> FILL ME IN! <=-' != <type 'str'>
         #
-        # So "navel".__class__ is equal to <type 'str'>? No not quite. This
+        # So "naval".__class__ is equal to <type 'str'>? No not quite. This
         # is just what it displays. The answer is simply str.
         #
         # See for yourself:
 
-        self.assertEqual(__, "navel".__class__) # It's str, not <type 'str'>
+        self.assertEqual(str, "naval".__class__) # It's str, not <type 'str'>
 
         # Need an illustration? More reading can be found here:
         #
